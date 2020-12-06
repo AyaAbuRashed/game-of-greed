@@ -11,4 +11,4 @@
 
 4. Mais Abd-Alrazeq
 
-PR <"  [Pull Request Lab6](https://github.com/AyaAbuRashed/game-of-greed/pull/new/lab06) ">
+PR <"  [Pull Request Lab6](https://github.com/AyaAbuRashed/game-of-greed/pull/1) ">
