@@ -1,9 +1,9 @@
 from collections import Counter
 import random
 
-class GameLogic:
-    def __init__(self,value):
-        self.value=value
+class GameLogic():
+    # def __init__(self,value):
+    #     self.value=value
     @staticmethod
     def calculate_score(diceRoll):
         score = 0
@@ -53,7 +53,7 @@ class GameLogic:
 
     @staticmethod
     def roll_dice(num):
-        arr = [random.randint(1,6) for i in range(6)]
+        arr = [random.randint(1,6) for i in range(num)]
         return tuple(arr)
 
 class Banker:
