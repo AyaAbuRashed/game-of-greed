@@ -1,7 +1,7 @@
 import pytest
 from game_of_greed.game_logic import *
 
-pytestmark = [pytest.mark.version_1]
+pytestmark = [pytest.mark.version_1, pytest.mark.version_2]
 
 
 def test_single_five():
