@@ -4,15 +4,13 @@ from game_of_greed.game_logic import GameLogic,Banker
 class Game:
     def __init__(self, roller=None):
         self.roller = roller or GameLogic.roll_dice
+        self.game = GameLogic()
+        self.banker = Banker()
         self.round = 1
         self.remaining_dice = 6
         self.score = 0
         self.to_shelf = 0
         self.stop = False
-
-    game = GameLogic()
-    banker = Banker()
-   
 
     def play(self):
         print('Welcome to Game of Greed')
@@ -21,11 +19,6 @@ class Game:
             print('OK. Maybe another time')
         elif res == 'y':
             self.start()
-            self.round = 1
-            self.remaining_dice = 6
-            self.score = 0
-            self.to_shelf = 0
-            self.stop = False
 
     def start(self):
         while self.score < 10000 and self.stop == False:
